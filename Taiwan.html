@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+          }
+
+          .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+          }
+          .navbar li a, .navbar .navbar-brand { 
+            color: #d5d5d5 !important;
+          }
+          .navbar-nav li a:hover {
+            color: #fff !important;
+          }
+          .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+          }
+          .navbar-default .navbar-toggle {
+            border-color: transparent;
+          }
+          .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+          }
+          .dropdown-menu li a {
+            color: #000 !important;
+          }
+          .dropdown-menu li a:hover {
+            background-color:#FFA07A !important;
+          }
+          footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+          }
+          footer a {
+            color: #f5f5f5;
+          }
+          footer a:hover {
+            color: #777;
+            text-decoration: none;
+          }  
+
+
+
+  </style>
+</head>
+  
+  <body>
+    
+
+ 
+
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+        
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Aboutme.html">About Me</a></li>
+                <li><a href="Taiwan.html">My Hometown-Taiwan</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="gourmet.html">Gourmet/Recipe</a></li>
+                    <li><a href="Miipon.html">Miipon-My Cat</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+<h2>
+    <br>
+</h2>
+        <div class="container-fluid bg-3 text-center">    
+            <h3>Taiwan</h3><br>
+            <div class="row">
+              <div class="col-sm-4">
+                <p>Taipei is the city where I was born and raised. The capital city of Taiwan is very convenient and full of restaurants and shops that you can explore.</p>
+                <img src="image/101.jpg" alt="101" width="350" height="300">
+                <p2>Taipei 101</p2>
+              </div>
+              <div class="col-sm-4"> 
+                <p>One of the best thing in Taiwan is you never get boared at night. You can have traditional snacks at night market or hangout at fancy bars.</p>
+                <img src="image/Jiufen.jpg" alt="Jiufen" width="350" height="300">
+                <p2>Jiufen</p2>
+              </div>
+              <div class="col-sm-4"> 
+                <p>Taiwan is an island with rich natural resources. No matter you love ocean view or mountain view, Taiwan is a perfect place to visit.</p>
+                <img src="image/eastcost.jpg" alt="eastcost" width="350" height="300">
+                <p2>East Cost</p2>
+              </div>
+            </div>
+          </div>
+
+<br>
+<br>
+<br>
+
+    
+
+
+    <script>
+
+      // FYI: this is JavaScript
+      console.log("HELLO FROM THE FOURTH PAGE!")
+
+      // access the select element from the DOM by specifying its unique identifier
+      var TaiwanSelector = document.getElementById("Taiwan-selector")
+
+      // define a click event handler function
+      function logSelectedTaiwan(){
+        console.log("YOU SELECTED:", TaiwanSelector.value)
+      }
+
+      // register the click event handler function to the button's click event
+      TaiwanSelector.addEventListener("change", logSelectedTaiwan, false)
+
+    </script>
+
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>2020 NY Chen's Every Flavour Chocolate </p> 
+  </footer>
+
+
+  </body>
+</html>
